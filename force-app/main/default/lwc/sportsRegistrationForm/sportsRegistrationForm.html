@@ -1,0 +1,49 @@
+<template>
+    <lightning-card title="Sports Registration" icon-name="custom:custom63">
+        <div class="slds-p-around_medium">
+            <!-- Toggle Button -->
+            <lightning-button label={toggleLabel} onclick={toggleForm}></lightning-button>
+        </div>
+
+        <!-- Registration Form -->
+        <template if:true={isFormOpen}>
+            <div class="slds-p-around_medium">
+                <lightning-combobox
+                    name="sport"
+                    label="Select Sport"
+                    value={sport}
+                    placeholder="Choose a sport"
+                    options={sportOptions}
+                    onchange={handleChange}>
+                </lightning-combobox>
+
+                <lightning-input
+                    name="teamName"
+                    label="Team Name"
+                    value={teamName}
+                    onchange={handleChange}>
+                </lightning-input>
+
+                <lightning-input
+                    name="players"
+                    label="Number of Players"
+                    type="number"
+                    value={players}
+                    onchange={handleChange}>
+                </lightning-input>
+
+                <lightning-input
+                    name="fee"
+                    label="Registration Fee"
+                    type="number"
+                    value={fee}
+                    onchange={handleChange}>
+                </lightning-input>
+
+                <div class="slds-m-top_medium">
+                    <lightning-button variant="brand" label="Register" onclick={handleRegister}></lightning-button>
+                </div>
+            </div>
+        </template>
+    </lightning-card>
+</template>

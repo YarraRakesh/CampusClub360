@@ -1,0 +1,32 @@
+<template>
+    <div class="scanner-container">
+        <div class="video-box">
+            <video></video>
+        </div>
+
+        <div class="scanner-footer">
+            <lightning-button 
+                label={buttonLabel} 
+                onclick={toggleScanner} 
+                variant="brand">
+            </lightning-button>
+        </div>
+
+        <!-- Show result -->
+        <template if:true={scannedItem}>
+            <div class="result-success">
+                <p>{scannedItem.Name}</p>
+                <p>Price: ₹{scannedItem.Price__c}</p>
+                <lightning-button 
+                    label="Add to Cart" 
+                    onclick={addToCart} 
+                    variant="success">
+                </lightning-button>
+            </div>
+        </template>
+
+        <template if:true={errorMsg}>
+            <div class="result-error">{errorMsg}</div>
+        </template>
+    </div>
+</template>

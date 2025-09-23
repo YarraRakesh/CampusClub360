@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Sends email to student when attendance is created</description>
+        <name>Send_Attendance_Email</name>
+        <label>Send Attendance Email</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>$Record.Student_Email__c</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderType</name>
+            <value>
+                <stringValue>CurrentUser</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>senderAddress</name>
+        </inputParameters>
+        <inputParameters>
+            <name>composeEmailContent</name>
+            <value>
+                <stringValue>True</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Attendance Confirmation — {!$Record.Club_Meeting__r.Name}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <stringValue>&lt;p&gt;Hi {!$Record.Student__r.Name},&lt;/p&gt;&lt;p&gt;This is to confirm your attendance at the meeting:&lt;/p&gt;&lt;p&gt;Title: {!$Record.Club_Meeting__r.Name}&lt;/p&gt;&lt;p&gt;Date: {!$Record.Club_Meeting__r.Meeting_Date__c}&lt;/p&gt;&lt;p&gt;Check-in Time: {!$Record.Check_In_Time__c}&lt;/p&gt;&lt;p&gt;Thank you for attending!&lt;/p&gt;&lt;p&gt;Regards,&lt;/p&gt;&lt;p&gt;Your Club Team&lt;/p&gt;</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sendRichBody</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputParameters>
+        <nameSegment>emailSimple</nameSegment>
+        <offset>0</offset>
+        <versionString>1.0.1</versionString>
+    </actionCalls>
+    <apiVersion>64.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <interviewLabel>Send Attendance Confirmation Email {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Send Attendance Confirmation Email</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Send_Attendance_Email</targetReference>
+        </connector>
+        <object>Attendance__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <description>Email body sent to student on attendance creation.</description>
+        <name>Attendance_Email_Body</name>
+        <isViewedAsPlainText>false</isViewedAsPlainText>
+        <text>&lt;p&gt;Hi {!$Record.Student__r.Name},&lt;/p&gt;&lt;p&gt;This is to confirm your attendance at the meeting:&lt;/p&gt;&lt;p&gt;Title: {!$Record.Club_Meeting__r.Name}&lt;/p&gt;&lt;p&gt;Date: {!$Record.Club_Meeting__r.Meeting_Date__c}&lt;/p&gt;&lt;p&gt;Check-in Time: {!$Record.Check_In_Time__c}&lt;/p&gt;&lt;p&gt;Thank you for attending!&lt;/p&gt;&lt;p&gt;Regards,&lt;/p&gt;&lt;p&gt;Your Club Team&lt;/p&gt;</text>
+    </textTemplates>
+</Flow>

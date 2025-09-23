@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Others</fullName>
+    <active>true</active>
+    <label>Others</label>
+    <picklistValues>
+        <picklist>Department__c</picklist>
+        <values>
+            <fullName>Artificial Intelligence %28AI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Artificial Intelligence and Machine Learning %28AI %26 ML%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civil Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Computer Science and Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cyber Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Science</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical and Electronics Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics and Communication Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanical Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deleted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Delete</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

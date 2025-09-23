@@ -1,0 +1,38 @@
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3rem 0;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-price {
+    margin-left: 1rem;
+    flex-grow: 1;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: right;
+}
+
+/* ✅ Custom Toast Styles */
+.success {
+    background: #2ecc71;
+    color: white;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+}
+
+.error {
+    background: #e74c3c;
+    color: white;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+}

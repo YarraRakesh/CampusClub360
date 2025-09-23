@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attendances_List</fullName>
+    <columns>NAME</columns>
+    <columns>Check_In_Time__c</columns>
+    <columns>Club_Meeting__c</columns>
+    <columns>Student__c</columns>
+    <columns>Student_Email__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>Attendances List</label>
+</ListView>

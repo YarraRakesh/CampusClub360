@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="Cart" icon-name="utility:cart">
+        <template if:true={cartItems.length}>
+            <template for:each={cartItems} for:item="item">
+                <div key={item.id} class="cart-item">
+                    <span class="item-name">{item.name}</span>
+                    <span class="item-price">
+                        ₹{item.price} × {item.quantity} = ₹{item.lineTotal}
+                    </span>
+                    <lightning-button-icon
+                        icon-name="utility:delete"
+                        variant="destructive"
+                        alternative-text="Remove"
+                        title="Remove"
+                        onclick={removeItem}
+                        data-id={item.id}>
+                    </lightning-button-icon>
+                </div>
+            </template>
+            <div class="total">Total: ₹{totalAmount}</div>
+            <lightning-button
+                label="Done"
+                variant="brand"
+                onclick={finalizeSale}>
+            </lightning-button>
+        </template>
+        <template if:false={cartItems.length}>
+            <p class="slds-p-around_medium">No items added yet.</p>
+        </template>
+
+        <!-- ✅ Custom Toast inside component -->
+        <template if:true={toast.visible}>
+            <div class={toastClass}>
+                {toast.message}
+            </div>
+        </template>
+    </lightning-card>
+</template>

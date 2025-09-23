@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Campus Mart Page">
+        <div class="sports-club-container">
+
+            <!-- Top: Sports Registration -->
+            <div class="section registration">
+                <h2>Sports Registration</h2>
+                <c-sports-registration-form></c-sports-registration-form>
+            </div>
+
+            <!-- Bottom split: Scanner and Cart -->
+            <div class="content">
+                <div class="section scanner">
+                    <h2>Item Scanner</h2>
+                    <c-sports-item-scanner 
+                        onaddtocart={handleAddToCart}>
+                    </c-sports-item-scanner>
+                </div>
+
+                <div class="section cart">
+                    <h2>Cart</h2>
+                    <c-sports-item-list 
+                        onfinalize={handleFinalize}>
+                    </c-sports-item-list>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

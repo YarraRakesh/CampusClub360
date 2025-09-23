@@ -1,0 +1,27 @@
+/* Put this file in the same LWC folder as attendanceScanner.css */
+.success {
+    color: #0a8f08; /* green */
+    font-weight: 600;
+}
+.duplicate {
+    color: #d9822b; /* orange */
+    font-weight: 600;
+}
+.error {
+    color: #c23934; /* red */
+    font-weight: 600;
+}
+.meetingInfo {
+    margin-bottom: 0.5rem;
+}
+.scannerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scanner-video {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}

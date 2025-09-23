@@ -1,0 +1,48 @@
+<template>
+    <lightning-card title="Attendance Scanner">
+        <div class="slds-p-around_medium">
+
+            <!-- Current meeting display -->
+            <template if:true={selectedMeetingName}>
+                <p class="meetingInfo"><strong>Current Meeting:</strong> {selectedMeetingName}</p>
+            </template>
+
+            <!-- Meeting selection -->
+            <lightning-combobox
+                name="meeting"
+                label="Select Meeting"
+                options={meetingOptions}
+                value={selectedMeeting}
+                onchange={handleMeetingChange}>
+            </lightning-combobox>
+
+            <!-- Video feed -->
+            <div class="slds-m-top_medium scannerContainer">
+                <video class="scanner-video" autoplay playsinline></video>
+                <canvas class="scanner-canvas" style="display:none"></canvas>
+            </div>
+
+            <!-- Start/Stop button -->
+            <div class="slds-m-top_medium">
+                <lightning-button
+                    variant="brand"
+                    label={buttonLabel}
+                    onclick={toggleScan}>
+                </lightning-button>
+            </div>
+
+            <!-- Scanned results -->
+            <div class="slds-m-top_medium results">
+                <template if:true={scannedList.length}>
+                    <h3>Recent Scans</h3>
+                    <template for:each={scannedList} for:item="s">
+                        <p key={s.key} class={s.cssClass}>
+                            {s.name} — {s.time}
+                        </p>
+                    </template>
+                </template>
+            </div>
+
+        </div>
+    </lightning-card>
+</template>

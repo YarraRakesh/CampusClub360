@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Edit</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Students - CIVIL</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Students - CIVIL</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Faculty_CIVIL</parentRole>
+</Role>
