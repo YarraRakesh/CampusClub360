@@ -17,8 +17,9 @@ The `sfdx-project.json` file contains useful configuration information for your 
 - [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
 - [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
 
-## 🔗 Connect with Me  
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rakeshyarra/)  
-[![Trailhead](https://img.shields.io/badge/Salesforce%20Trailhead-00A1E0?logo=salesforce&logoColor=white)](https://www.salesforce.com/trailblazer/yarrarakesh)
+## 🔗 Connect with Me  
+- <a href="https://www.linkedin.com/in/rakeshyarra/" target="_blank">LinkedIn</a>  
+- <a href="https://www.salesforce.com/trailblazer/yarrarakesh" target="_blank">Salesforce Trailhead</a>  
+- <a href="https://drive.google.com/drive/folders/1XqlNSjAbD1LnQBt-KATnesId4i-O1qFW" target="_blank">Project Documentation</a>
 
