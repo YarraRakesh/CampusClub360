@@ -19,7 +19,7 @@ The `sfdx-project.json` file contains useful configuration information for your 
 
 
 ## 🔗 Connect with Me  
-- <a href="https://www.linkedin.com/in/rakeshyarra/" target="_blank">LinkedIn</a>  
+- <a href="https://www.linkedin.com/posts/rakeshyarra_salesforce-smartbridge-tcs-activity-7377747270399848449-POW1?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFDp4OYBZoia2hubIFAGV0wvezZbSq1Vlfc" target="_blank">LinkedIn</a>  
 - <a href="https://www.salesforce.com/trailblazer/yarrarakesh" target="_blank">Salesforce Trailhead</a>  
 - <a href="https://drive.google.com/drive/folders/1XqlNSjAbD1LnQBt-KATnesId4i-O1qFW" target="_blank">Project Documentation</a>
 
