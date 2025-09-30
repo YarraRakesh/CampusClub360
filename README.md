@@ -3,14 +3,6 @@
 
 ---
 
-![Salesforce](https://img.shields.io/badge/Salesforce-Cloud-blue?logo=salesforce)  
-![Apex](https://img.shields.io/badge/Apex-Programming-blueviolet)  
-![LWC](https://img.shields.io/badge/Lightning-Web%20Components-orange)  
-![SmartBridge](https://img.shields.io/badge/SmartBridge-Innovation-green)  
-![GitHub](https://img.shields.io/badge/GitHub-Repo-black?logo=github)  
-
----
-
 ## 📌 Problem Statement
 Faculty and administrators face challenges in tracking student attendance, managing sports registrations, and handling store sales.  
 Manual processes lead to errors, duplicate entries, and difficulties in tracking stock and revenue.
